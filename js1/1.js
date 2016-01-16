@@ -1,5 +1,5 @@
 var iframe = document.createElement("iframe");
-iframe.src = "Mrkai.html";
+iframe.src = "/Mrkai.html";
 
 if (iframe.attachEvent){
     iframe.attachEvent("onload", function(){
