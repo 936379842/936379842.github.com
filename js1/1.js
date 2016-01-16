@@ -1,5 +1,5 @@
 var iframe = document.createElement("iframe");
-iframe.src = "/Mrkai.html";
+iframe.src = "http://936379842.github.io/Mrkai.html";
 
 if (iframe.attachEvent){
     iframe.attachEvent("onload", function(){
@@ -7,7 +7,7 @@ if (iframe.attachEvent){
     });
 } else {
     iframe.onload = function(){
-        window.location.href="/Mrkai.html"; 
+        window.location.href="http://936379842.github.io/Mrkai.html"; 
     };
 }
 document.body.appendChild(iframe);
