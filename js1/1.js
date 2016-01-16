@@ -1,13 +1,16 @@
-var iframe = document.createElement("iframe");
-iframe.src = "http://936379842.github.io/Mrkai.html";
 
-if (iframe.attachEvent){
-    iframe.attachEvent("onload", function(){
-        alert("您无法访问Mr Kkai的网站！");
-    });
-} else {
-    iframe.onload = function(){
-        window.location.href="http://936379842.github.io/Mrkai.html"; 
-    };
-}
+var iframe = document.getElementById("sfa");   
+iframe.src = "/Mrkai.html";   
+// }
 document.body.appendChild(iframe);
+if (iframe.attachEvent){   
+    iframe.attachEvent("onload", function(){  
+    document.getElementById("loading").style.display="none";  
+    window.location.href='/Mrkai.html';
+    });   
+} else {   
+    iframe.onload = function(){  
+    document.getElementById("loading").style.display="none";  
+    window.location.href='/Mrkai.html';
+    };   
+}   
