@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('welcome|杨青青|#countdown 3|Mr kai|#countdown 3|Mr kai||');
+      S.UI.simulate('welcome|Mr kai|#countdown 3|Mr kai|#countdown 3|Mr kai||');
     }
 
     S.Drawing.loop(function () {
